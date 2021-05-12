@@ -5,9 +5,10 @@ import java.util.Date;
 
 public class TbSeller implements Serializable {
     private String sellerId;
-
+    //公司名称
     private String name;
 
+    //店铺名称
     private String nickName;
 
     private String password;

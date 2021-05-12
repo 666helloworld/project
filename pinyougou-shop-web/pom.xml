@@ -84,22 +84,30 @@
             <artifactId>servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>pinyougou-sellergoods-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- 身份验证 -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>pinyougou-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
     </dependencies>
-     <build>
-         <plugins>
-             <plugin>
-                 <groupId>org.apache.tomcat.maven</groupId>
-                 <artifactId>tomcat7-maven-plugin</artifactId>
-                 <version>2.2</version>
-                 <configuration>
-                     <!-- 指定端口 -->
-                     <port>9091</port>
-                     <!-- 请求路径 -->
-                     <path>/shop-web</path>
-                 </configuration>
-             </plugin>
-         </plugins>
-     </build>
 
 
 </project>

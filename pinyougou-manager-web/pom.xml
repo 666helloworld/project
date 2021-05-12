@@ -95,45 +95,45 @@
             <artifactId>pinyougou-pojo</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <!-- 身份验证 -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+        </dependency>
+
+        <!--        用以传递上传文件模块-->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>pinyougou-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    <!--    <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>pinyougou-search-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>-->
+      <!--  <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>pinyougou-page-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>-->
+        <!--消息队列-->
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-client</artifactId>
+            <version>5.13.4</version>
+        </dependency>
+
+
     </dependencies>
 
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <!-- 指定端口 -->
-                    <port>9090</port>
-                    <!-- 请求路径 -->
-                    <path>/</path>
-                    <extraDependencies>
-                        <dependency>
-                            <groupId>org.slf4j</groupId>
-                            <artifactId>slf4j-api</artifactId>
-                            <version>1.7.2</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.slf4j</groupId>
-                            <artifactId>jul-to-slf4j</artifactId>
-                            <version>1.7.2</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>ch.qos.logback</groupId>
-                            <artifactId>logback-classic</artifactId>
-                            <version>1.0.7</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>ch.qos.logback</groupId>
-                            <artifactId>logback-core</artifactId>
-                            <version>1.0.7</version>
-                        </dependency>
-                    </extraDependencies>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
